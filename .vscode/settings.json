@@ -1,9 +1,12 @@
 {
 	"liveServer.settings.https": {
 	"enable": true, //set it true to enable the feature.
+  // CHECK IF STILL CORRECT
 	"cert": "C:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.crt", //full path of the certificate
 	"key": "C:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.key", //full path of the private key
 	"passphrase": "1234"
 	},
 	// "liveServer.settings.port": 8080
 	}
+
+  
