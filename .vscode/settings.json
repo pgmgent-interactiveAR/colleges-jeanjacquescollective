@@ -1,10 +1,10 @@
 {
 	"liveServer.settings.https": {
 	"enable": true, //set it true to enable the feature.
-	// "cert": "C:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.crt", //full path of the certificate
-	// "key": "C:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.key", //full path of the private key
-	"cert": "D:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.crt",
-	"key": "D:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.key",
+	"cert": "C:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.crt", //full path of the certificate
+	"key": "C:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.key", //full path of the private key
+	// "cert": "D:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.crt",
+	// "key": "D:/Users/janne/Documents/Artevelde/colleges-jeanjacquescollective/server.key",
 	"passphrase": "1234"
 	},
 	"liveServer.settings.port": 5501,
