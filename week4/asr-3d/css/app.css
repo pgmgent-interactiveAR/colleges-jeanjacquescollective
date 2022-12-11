@@ -1,0 +1,84 @@
+.app {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+  position: relative;
+}
+
+.app__modal {
+  position: absolute;
+  bottom: 0;
+  width: max(60%, 350px); 
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    142deg,
+    rgba(2, 0, 36, 0.45840342973126746) 0%,
+    rgba(200, 32, 235, 0.5452381636248249) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  color: white;
+  border-radius: 50px 50px 0 0;
+  margin: 0 auto;
+  z-index: 99;
+  overflow: hidden;
+}
+
+.app__subs__container {
+  border: 2em solid grey;
+  height: 4em;
+  min-height: 2em;
+  min-width: 350px;
+  max-width: 1000px;
+  border-radius: 10px;
+  font-size: 2em;
+  border: solid 5px transparent;
+  /* !importanté */
+  border-radius: 1em;
+  position: relative;
+  background: linear-gradient(
+    142deg,
+    rgba(2, 0, 36, 0.45840342973126746) 0%,
+    rgba(200, 32, 235, 0.5452381636248249) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
+  background-clip: padding-box;
+  padding: 0 15px;
+  z-index: 99;
+  resize: both;
+  overflow: hidden;
+  box-sizing: border-box; 
+}
+
+
+.subs {
+  overflow-y: hidden;
+  width: 100%;
+  height: 100%;
+  color: white;
+}
+
+.app__modal__controls {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.disabled {
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+.app__webcam {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.hidden{
+  display: none;
+}

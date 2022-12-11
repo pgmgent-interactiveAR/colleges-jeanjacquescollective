@@ -5,6 +5,7 @@
 body{
   width: 100%;
   height: 100%;
+  font-family: sans-serif;
 }
 /*
     Remove all the styles of the "User-Agent-Stylesheet", except for the 'display' property

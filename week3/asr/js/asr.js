@@ -8,11 +8,10 @@ const speechRecognitionList = new SpeechGrammarList();
 // recognition.grammars = SpeechGrammarList;
 recognition.continuous = true;
 recognition.lang = "en-US";
-recognition.interimResults = true;
+recognition.interimResults = false;
 recognition.maxAlternatives = 1;
 
-const diagnostic = document.querySelector(".output");
-const bg = document.querySelector("html");
+const subtitlesElement = document.querySelector(".subs");
 const startButton = document.querySelector(".button--start");
 const stopButton = document.querySelector(".button--stop");
 
@@ -29,11 +28,15 @@ stopButton.onclick = () => {
 };
 
 recognition.onresult = (event) => {
-  console.log(event.results);
   const guess = event.results[event.results.length-1];
-  const word = guess[0].transcript;
-  if(guess.isFinal){
-    console.log(word);
-  }
-  // diagnostic.textContent = `${guess.transcript}`;
+  const sentence = guess[0].transcript;
+  // if(guess.isFinal){
+    subtitlesElement.textContent += `${sentence}`;
+    subtitlesElement.scrollTop = subtitlesElement.scrollHeight - subtitlesElement.clientHeight;
+    display3DWord(sentence)
+//  }
 };
+
+display3DWord = (word) => {
+  
+}
