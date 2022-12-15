@@ -1,5 +1,8 @@
 {
   "dependencies": {
     "openssl": "^2.0.0"
-  }
+  },
+	"scripts": {
+		"git:update": "git add . && git commit -m [WIP] && git push"
+	}
 }
