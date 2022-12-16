@@ -12,12 +12,12 @@ const speechRecognitionApp = (() => {
   recognition.maxAlternatives = 1;
 
   const speechRecognitionList = new SpeechGrammarList();
+
   const subtitlesElement = document.querySelector(".subs");
   const subtitlesContainerElement = document.querySelector(
     ".app__subs__container"
   );
-
-  const model = document.getElementById("model");
+  const model = document.querySelector("#model");
   const startButton = document.querySelector(".button--start");
   const stopButton = document.querySelector(".button--stop");
   const hideSubs = document.querySelector(".button--subs");
@@ -62,6 +62,7 @@ const speechRecognitionApp = (() => {
       const sentence = guess[0].transcript;
       // if(guess.isFinal){
       subtitlesElement.textContent += `${sentence}`;
+      // scrolls to bottom of
       subtitlesElement.scrollTop =
         subtitlesElement.scrollHeight - subtitlesElement.clientHeight;
       display3DWord(sentence);
@@ -103,7 +104,6 @@ const speechRecognitionApp = (() => {
   const animationStopped = document.body.addEventListener(
     "animation-finished",
     () => {
-      // model.removeAttribute('animation-mixer');
       if (renderQue.length > 0) {
         nextAnimation(renderQue.shift());
         return;
